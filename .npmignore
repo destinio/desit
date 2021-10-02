@@ -1,2 +1,9 @@
 *.lock
 src/
+.editorconfig
+.prettierrc
+setup.js
+.vscode/
+tsconfig.json
+TODO.md
+code-of-conduct.md

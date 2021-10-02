@@ -1,26 +1,26 @@
 {
-  "name": "tempapp",
-  "version": "0.2.0",
-  "description": "just a template",
+  "name": "desit",
+  "version": "0.1.0",
+  "description": "Some helpful JS tools for your own hotness 🔥",
   "keywords": [
     "cli",
     "tooling"
   ],
-  "homepage": "http://url.to.app.page.com",
+  "homepage": "https://github.com/destinio/desit",
   "bugs": {
-    "url": "https://github.com/owner/project/issues"
+    "url": "https://github.com/destinio/desit/issues"
   },
   "license": "MIT",
   "author": {
     "name": "Destin Lee",
-    "email": "your@email.com",
+    "email": "dleeinc@email.com",
     "url": "https://destin.io"
   },
   "main": "index.js",
   "bin": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/destinio/node-pack-temp"
+    "url": "https://github.com/destinio/desit"
   },
   "engines": {
     "node": ">=10"
