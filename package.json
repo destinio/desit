@@ -16,6 +16,7 @@
     "email": "dleeinc@email.com",
     "url": "https://destin.io"
   },
+  "type": "module",
   "main": "index.js",
   "bin": "./index.js",
   "repository": {
