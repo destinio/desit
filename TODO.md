@@ -3,7 +3,6 @@
 ## packages to look up
 
 Ora - spinners
-boxen - boxes
 log-symbols
 conf
 execa

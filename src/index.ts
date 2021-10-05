@@ -1,6 +1,8 @@
-import { Command } from 'commander'
 import boxen from 'boxen'
+import readJson from 'read-package-json'
 
+import { Command } from 'commander'
+const { log } = console
 /**
  * Main init function
  */
@@ -11,13 +13,7 @@ function init() {
   program.option('-s, --start', 'start app')
   program.parse()
 
-  const { start } = program.opts()
-  console.log(start)
-  console.log(
-    boxen('Welcom', {
-      padding: 1,
-    })
-  )
+  log(123)
 }
 
 export { init }
