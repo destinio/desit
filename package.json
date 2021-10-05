@@ -43,6 +43,7 @@
     "clipboardy": "^2.3.0",
     "commander": "^8.2.0",
     "configstore": "^6.0.0",
+    "date-fns": "^2.25.0",
     "inquirer": "^8.1.5",
     "ora": "^6.0.1",
     "read-package-json": "^4.1.1",
