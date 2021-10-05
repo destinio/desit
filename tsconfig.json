@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es5", "ES2015", "DOM"],
     "outDir": "./dist",
     "rootDir": "./src",
     "moduleResolution": "node",
-    "target": "es6",
     "allowJs": true,
     "strict": true,
     "noImplicitAny": true,
@@ -11,6 +13,7 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
+    "types": ["node"],
     "resolveJsonModule": true
   },
   "include": ["./src/**/*"],

@@ -11,6 +11,4 @@
  */
 
 // Start APP
-import { init } from './dist/index.js'
-
-init()
+require('./dist/index').init()

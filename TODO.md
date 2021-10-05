@@ -2,13 +2,12 @@
 
 ## packages to look up
 
+inquirer
 Ora - spinners
 log-symbols
-conf
 execa
 get-emails
 globby
-inquirer
 log-symbols
 make-dir
 
