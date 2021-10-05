@@ -25,7 +25,7 @@ function init() {
 
   program.version('0.2.0').description('Just trying to find a better way')
 
-  program.option('-t, --today', 'show today')
+  program.option('-t, --today', 'Show info about today. Time and such')
 
   program.parse()
 
