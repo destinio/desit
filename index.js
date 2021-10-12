@@ -10,8 +10,7 @@
  * @license MIT
  */
 
-// Inport package.json to use version number and other info
-const config = require('./package.json')
-
 // Start APP
-require('./dist').init(config)
+import { init } from './dist/index.js'
+
+init()

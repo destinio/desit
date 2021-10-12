@@ -1,33 +1,38 @@
 {
   "name": "desit",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Some helpful JS tools for your own hotness 🔥",
+  "bin": {
+    "desit": "index.js",
+    "dit": "index.js"
+  },
+  "repository": "destinio/desit",
+  "author": {
+    "name": "Destin Lee",
+    "email": "dleeinc@email.com",
+    "url": "https://destin.io"
+  },
   "keywords": [
     "cli",
-    "tooling"
+    "desit",
+    "tooling",
+    "node cli",
+    "nodejs",
+    "destin",
+    "destin lee"
   ],
   "homepage": "https://github.com/destinio/desit",
   "bugs": {
     "url": "https://github.com/destinio/desit/issues"
   },
   "license": "MIT",
-  "author": {
-    "name": "Destin Lee",
-    "email": "dleeinc@email.com",
-    "url": "https://destin.io"
-  },
-  "main": "index.js",
-  "bin": "./index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/destinio/desit"
-  },
-  "engines": {
-    "node": ">=10"
-  },
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=10"
   },
   "devDependencies": {
     "@types/node": "^16.10.2",
@@ -37,6 +42,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "clipboardy": "^2.3.0",
-    "commander": "^8.2.0"
+    "commander": "^8.2.0",
+    "meow": "^10.1.1"
   }
 }

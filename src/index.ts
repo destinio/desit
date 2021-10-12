@@ -1,24 +1,47 @@
-import { bold } from 'chalk';
-import { Command } from 'commander';
+import chalk from 'chalk'
+import { Command } from 'commander'
+import meow from 'meow'
 
-const { log } = console;
+const { log } = console
+
+const cli = meow(
+  `
+	Usage
+	  $ foo <input>
+
+	Options
+	  --rainbow, -r  Include a rainbow
+
+	Examples
+	  $ foo unicorns --rainbow
+	  🌈 unicorns 🌈
+`,
+  {
+    importMeta: import.meta,
+    flags: {
+      rainbow: {
+        type: 'boolean',
+        alias: 'r',
+      },
+    },
+  }
+)
 
 /**
  * Main init function
  */
-function init(config: any) {
-  const program = new Command();
-  const { version, description } = config;
+function init() {
+  const program = new Command()
 
-  program.version(version).description(description);
-  program.option('-s, --start', 'start app');
-  program.parse();
+  program.version('0.2.0').description('The desit toolset')
+  program.option('-s, --start', 'start app')
+  program.parse()
 
-  const { start } = program.opts();
+  const { start } = program.opts()
 
-  start && log('START');
+  start && log('START')
 
-  log(bold.hex('#000').bgBlueBright(' App has started '));
+  log(chalk.bold.hex('#000').bgBlueBright(' App has started '))
 }
 
-export { init };
+export { init }
